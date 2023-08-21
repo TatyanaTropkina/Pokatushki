@@ -278,4 +278,16 @@ body {
   .visible {
 	opacity: 1;
   }
-  
+
+  .road {
+	  position: absolute;
+	  bottom: -5px;
+	  z-index: 5;
+  }
+  .grace {
+	  position: absolute;
+	  bottom: -40px;
+	  z-index: 22;
+	  width: 100%;
+	  object-fit: cover;
+  }

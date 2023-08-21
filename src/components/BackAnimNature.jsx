@@ -1,40 +1,37 @@
 import Sand from "./Sand";
 import Wave from "./Wave";
 import Sea from "./Sea";
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
+function BackAnimNature() {
+  // 	const [showSand, setShowSand] = useState(true);
 
-function BackAnimNature () {
-// 	const [showSand, setShowSand] = useState(true);
+  //   useEffect(() => {
+  //     const sandTimer = setTimeout(() => {
+  //       setShowSand(false);
+  //     }, 1000);
 
-//   useEffect(() => {
-//     const sandTimer = setTimeout(() => {
-//       setShowSand(false);
-//     }, 1000);
+  //     const waveTimer = setTimeout(() => {
+  //       setShowSand(true);
+  //     }, 3000);
 
-//     const waveTimer = setTimeout(() => {
-//       setShowSand(true);
-//     }, 3000);
+  //     return () => {
+  //       clearTimeout(sandTimer);
+  //       clearTimeout(waveTimer);
+  //     };
+  //   }, [showSand]);
 
-//     return () => {
-//       clearTimeout(sandTimer);
-//       clearTimeout(waveTimer);
-//     };
-//   }, [showSand]);
+  // return (
+  // 	<div>
+  // 		<Wave/>
+  // 		<Sand/>
+  // 		<Sea/>
+  // 		{/* {showSand ? ( <Sand/> ) : (<Wave/> )} */}
 
-	// return (
-	// 	<div>
-	// 		<Wave/>
-	// 		<Sand/>
-	// 		<Sea/>
-	// 		{/* {showSand ? ( <Sand/> ) : (<Wave/> )} */}
+  // 	</div>
+  // )
 
-	// 	</div>
-	// ) 
-
-
-
-	const [currentDiv, setCurrentDiv] = useState(0);
+  const [currentDiv, setCurrentDiv] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -44,18 +41,17 @@ function BackAnimNature () {
     return () => clearInterval(interval);
   }, []);
 
-
-const divs = [ 
-	<div key={0} className={`wrapper ${currentDiv === 0 ? 'visible' : ''}`}>
-    	<div className="waveWrapper">{<Wave/>}</div>
+  const divs = [
+    <div key={0} className={`wrapper ${currentDiv === 0 ? "visible" : ""}`}>
+      <div className="waveWrapper">{<Wave />}</div>
     </div>,
-    <div key={1} className={`wrapper ${currentDiv === 1 ? 'visible' : ''}`}>
-    	<div className="sandWrapper">{<Sand/>}</div>
+    <div key={1} className={`wrapper ${currentDiv === 1 ? "visible" : ""}`}>
+      <div className="sandWrapper">{<Sand />}</div>
     </div>,
-    <div key={2} className={`wrapper ${currentDiv === 2 ? 'visible' : ''}`}>
-    	<div className="seaWrapper">{<Sea/>}</div>
-    </div>
-	];
-	return <>{divs}</>;
+    <div key={2} className={`wrapper ${currentDiv === 2 ? "visible" : ""}`}>
+      <div className="seaWrapper">{<Sea />}</div>
+    </div>,
+  ];
+  return <>{divs}</>;
 }
 export default BackAnimNature;

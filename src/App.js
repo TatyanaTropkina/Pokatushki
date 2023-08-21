@@ -13,11 +13,6 @@ function App(props) {
 
   return (
     <div className="App">
-		{/* <SunsetAnimation/> */}
-		{/* <img className="bouble" src={bouble} alt="" /> */}
-		{/* <img className="bouble" src={bg} alt="" /> */}
-		
-          
 		<div className='bodywrapper'>
 		<Header/>
 		<div className='container'>
