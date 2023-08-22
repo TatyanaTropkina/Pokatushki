@@ -1,21 +1,25 @@
 {
   "files": {
-    "main.css": "/pokatushki/static/css/main.204de05f.css",
-    "main.js": "/pokatushki/static/js/main.86c72c32.js",
+    "main.css": "/pokatushki/static/css/main.325ef28c.css",
+    "main.js": "/pokatushki/static/js/main.b9149eb3.js",
     "static/js/787.ba2d851b.chunk.js": "/pokatushki/static/js/787.ba2d851b.chunk.js",
     "static/media/2.jpg": "/pokatushki/static/media/2.afe0ae8e8f2ea6131d1c.jpg",
     "static/media/tr8tVa.gif": "/pokatushki/static/media/tr8tVa.e67544a15785fab250f2.gif",
+    "static/media/Слой 4.png": "/pokatushki/static/media/Слой 4.0789b9d682b671b1c6e8.png",
+    "static/media/Слой 5.png": "/pokatushki/static/media/Слой 5.c107bdd055a6752567b1.png",
     "static/media/1.png": "/pokatushki/static/media/1.3d1249c5c0809bbeba42.png",
     "static/media/white.png": "/pokatushki/static/media/white.22ce7efb002c39c727b2.png",
+    "static/media/Слой 3.png": "/pokatushki/static/media/Слой 3.0da7b98f3b1bf02e3420.png",
+    "static/media/grace2.svg": "/pokatushki/static/media/grace2.74d94855fd3bc8ccb1581c08ae4f1047.svg",
     "static/media/layered-waves-haikei.svg": "/pokatushki/static/media/layered-waves-haikei.4b175965e1725d4a1e9cc36b88cbe6f1.svg",
     "static/media/mountain_icon-icons.com_54385.svg": "/pokatushki/static/media/mountain_icon-icons.com_54385.6eb081d01c9553e14025841047e5d098.svg",
     "index.html": "/pokatushki/index.html",
-    "main.204de05f.css.map": "/pokatushki/static/css/main.204de05f.css.map",
-    "main.86c72c32.js.map": "/pokatushki/static/js/main.86c72c32.js.map",
+    "main.325ef28c.css.map": "/pokatushki/static/css/main.325ef28c.css.map",
+    "main.b9149eb3.js.map": "/pokatushki/static/js/main.b9149eb3.js.map",
     "787.ba2d851b.chunk.js.map": "/pokatushki/static/js/787.ba2d851b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.204de05f.css",
-    "static/js/main.86c72c32.js"
+    "static/css/main.325ef28c.css",
+    "static/js/main.b9149eb3.js"
   ]
 }
