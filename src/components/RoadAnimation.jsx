@@ -86,7 +86,7 @@ const RoadAnimation = () => {
         canvas.height = 60;
 
         const roadColor = "#464649"; // Серый цвет дороги
-        const laneColor = "#ffffff"; // Белый цвет разметки
+        const laneColor = "#cccccc"; // Белый цвет разметки
 
         const laneWidth = 60; // Ширина полосы
         const laneSpacing = 40; // Промежуток между полосами

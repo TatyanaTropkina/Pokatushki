@@ -6,17 +6,17 @@ import bouble from "./../src/images/white.png"
 import bg from "./../src/images/layered-waves-haikei.svg"
 
 import { useState } from 'react';
-import SunsetAnimation from './components/SunsetAnimation';
+
 
 function App(props) {
 
 
   return (
     <div className="App">
+
 		<div className='bodywrapper'>
 		<Header/>
 		<div className='container'>
-		
        		<Table state={state} />
 	   </div>
 		</div>
