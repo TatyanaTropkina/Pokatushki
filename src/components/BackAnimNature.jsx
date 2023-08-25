@@ -15,14 +15,14 @@ function BackAnimNature() {
   }, []);
 
   const divs = [
-    <div key={0} className={`wrapper ${currentDiv === 0 ? "visible" : ""}`}>
-      <div className="waveWrapper">{<Wave />}</div>
+    <div key={0} className={`wrapperBg ${currentDiv === 0 ? "visible" : ""}`}>
+      <div className="wrapper waveWrapper">{<Wave />}</div>
     </div>,
-    <div key={1} className={`wrapper ${currentDiv === 1 ? "visible" : ""}`}>
-      <div className="sandWrapper">{<Sand />}</div>
+    <div key={1} className={`wrapperBg ${currentDiv === 1 ? "visible" : ""}`}>
+      <div className="wrapper sandWrapper">{<Sand />}</div>
     </div>,
-    <div key={2} className={`wrapper ${currentDiv === 2 ? "visible" : ""}`}>
-      <div className="seaWrapper">{<Sea />}</div>
+    <div key={2} className={`wrapperBg  ${currentDiv === 2 ? "visible" : ""}`}>
+      <div className="wrapper seaWrapper">{<Sea />}</div>
     </div>,
   ];
   return <>{divs}</>;
