@@ -9,7 +9,7 @@ function BackAnimNature() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentDiv((prevDiv) => (prevDiv + 1) % 3);
-    }, 5000); // Смена дивов каждые 10 секунд
+    }, 10000); // Смена дивов каждые 10 секунд
 
     return () => clearInterval(interval);
   }, []);
