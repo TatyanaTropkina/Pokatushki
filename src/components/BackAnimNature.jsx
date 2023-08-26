@@ -25,7 +25,7 @@ function BackAnimNature() {
       <div className="wrapper seaWrapper">{<Sea />}</div>
     </div>,
   ];
-  return <>{divs}</>;
+  return <div className="nature">{divs}</div>;
 
 }
 export default BackAnimNature;

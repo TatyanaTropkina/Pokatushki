@@ -1,11 +1,11 @@
 import React, { useRef, useEffect} from 'react';
 
 const SunsetAnimation = () => {
-  const canvasRef = useRef(null);
 
-  let hue;
-  let saturation = 50;
-  let lightness;
+  const canvasRef = useRef(null);
+  const hue = useRef();
+  const saturation = useRef(50);
+  const lightness = useRef();
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
@@ -65,9 +65,9 @@ const SunsetAnimation = () => {
         if (angle > Math.PI) {
           star.draw();
           if (
-              hue === 210 &&
-              lightness === 20 &&
-              saturation === 60
+              hue.current === 210 &&
+              lightness.current === 20 &&
+              saturation.current === 60
           ) {
             star.update();
           }
@@ -78,31 +78,33 @@ const SunsetAnimation = () => {
     const updateBackgroundColor = (angle) => {
       const normalizedAngle = (angle + Math.PI) / (2 * Math.PI);
       if (normalizedAngle >= 0.217 && normalizedAngle < 0.8) {
-        hue = 210;
-        lightness = 50;
-        saturation = 40;
+        hue.current = 210;
+        lightness.current = 50;
+        saturation.current = 40;
       } else if (normalizedAngle >= 0.325 && normalizedAngle < 0.9) {
-        hue = 200;
-        lightness = 60;
-        saturation = 40;
+        hue.current = 200;
+        lightness.current = 60;
+        saturation.current = 40;
       } else if (normalizedAngle >= 0.233 && normalizedAngle < 1) {
-        hue = 30;
-        lightness = 60;
+        hue.current = 30;
+        lightness.current = 60;
       } else {
-        hue = 210;
-        lightness = 20;
-        saturation = 60;
+        hue.current = 210;
+        lightness.current = 20;
+        saturation.current = 60;
       }
 
-      let colorString = `hsla(${hue}, ${saturation}%, ${lightness}%, 0.7)`;
+      let colorString = `hsla(${hue.current}, ${saturation.current}%, ${lightness.current}%, 0.7)`;
 
       if (normalizedAngle >= 0.208 && normalizedAngle < 0.625) {
-        colorString = `hsla(${hue}, ${saturation}%, ${lightness}%, 0.6)`;
+        colorString = `hsla(${hue.current}, ${saturation.current}%, ${lightness.current}%, 0.6)`;
       }
 
-      const header = document.querySelector(".header");
+      const header = document.querySelector(".skyBg");
+
       header.style.backgroundColor = colorString;
     };
+
     createStars();
     const animateSun = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -131,8 +133,8 @@ const SunsetAnimation = () => {
   }, []);
 
   return (
-      <div>
-        <canvas ref={canvasRef} id="canvasSunAndBg" width="1500" height="400"></canvas>
+      <div className="skyBg">
+        <canvas ref={canvasRef} id="canvasSunAndBg" width="1200" height="400"></canvas>
       </div>
   );
 };
