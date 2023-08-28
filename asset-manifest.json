@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/pokatushki/static/css/main.64384e61.css",
-    "main.js": "/pokatushki/static/js/main.68196c56.js",
+    "main.css": "/pokatushki/static/css/main.f442bce2.css",
+    "main.js": "/pokatushki/static/js/main.b1debf40.js",
     "static/js/787.ba2d851b.chunk.js": "/pokatushki/static/js/787.ba2d851b.chunk.js",
-    "static/media/2.jpg": "/pokatushki/static/media/2.afe0ae8e8f2ea6131d1c.jpg",
     "static/media/tr8tVa.gif": "/pokatushki/static/media/tr8tVa.e67544a15785fab250f2.gif",
+    "static/media/2.png": "/pokatushki/static/media/2.b3eeb0e8462516983720.png",
+    "static/media/bike-bicycle.gif": "/pokatushki/static/media/bike-bicycle.e6643f9ea7ca226b5ddc.gif",
     "static/media/1.png": "/pokatushki/static/media/1.3d1249c5c0809bbeba42.png",
-    "static/media/white.png": "/pokatushki/static/media/white.22ce7efb002c39c727b2.png",
-    "static/media/grace2.svg": "/pokatushki/static/media/grace2.74d94855fd3bc8ccb1581c08ae4f1047.svg",
-    "static/media/layered-waves-haikei.svg": "/pokatushki/static/media/layered-waves-haikei.4b175965e1725d4a1e9cc36b88cbe6f1.svg",
-    "static/media/mountain_icon-icons.com_54385.svg": "/pokatushki/static/media/mountain_icon-icons.com_54385.6eb081d01c9553e14025841047e5d098.svg",
+    "static/media/biker.gif": "/pokatushki/static/media/biker.6e81e9eead0a1a2c3432.gif",
+    "static/media/wavy-background.png": "/pokatushki/static/media/wavy-background.180786598e741294f08e.png",
+    "static/media/grace2.svg": "/pokatushki/static/media/grace2.f8162371933b1b0aceb2c6fde21ffc17.svg",
+    "static/media/Union.svg": "/pokatushki/static/media/Union.dbcc2f9fcd727e7a0640e394eed9f7bb.svg",
     "index.html": "/pokatushki/index.html",
-    "main.64384e61.css.map": "/pokatushki/static/css/main.64384e61.css.map",
-    "main.68196c56.js.map": "/pokatushki/static/js/main.68196c56.js.map",
+    "main.f442bce2.css.map": "/pokatushki/static/css/main.f442bce2.css.map",
+    "main.b1debf40.js.map": "/pokatushki/static/js/main.b1debf40.js.map",
     "787.ba2d851b.chunk.js.map": "/pokatushki/static/js/787.ba2d851b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.64384e61.css",
-    "static/js/main.68196c56.js"
+    "static/css/main.f442bce2.css",
+    "static/js/main.b1debf40.js"
   ]
 }
