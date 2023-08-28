@@ -1,0 +1,41 @@
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #ffffff;
+  th, td {
+    border: 2px solid #eaeaea;
+    padding: 8px;
+    text-align: left;
+    font-family: 'Comic Sans MS', arial;
+  }
+  th {
+    background-color: #B5D1DD;
+  }
+}
+.tableHead {
+  position: sticky;
+  top: 0;
+}
+
+.tableSeil {
+  padding: 10px 10px;
+
+}
+.tableImg {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.tableImgZoomed {
+  height: calc(50px * 6);
+  position: absolute;
+  top: 0;
+  width: auto;
+  height: auto;
+  transform: scale(1.5);
+
+}
+.seilImg {
+  width: 100px;
+
+}

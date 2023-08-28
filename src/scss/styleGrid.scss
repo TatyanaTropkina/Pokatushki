@@ -1,0 +1,61 @@
+.route-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.route-card {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  gap: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+.screenshot {
+  position: relative;
+  img {
+    width: 100%;
+    height: 100%;
+    max-height: 218px;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+  }
+}
+
+.route-details {
+  padding: 0 20px 20px 20px;
+  h2 {
+    margin: 0 0 10px 0;
+  }
+}
+
+
+.trainInfo {
+  display: flex;
+}
+.there,
+.back {
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  margin: 0 0 10px 0;
+}
+
+.widgetIframe {
+
+}
+.widget {
+  position: relative;
+  .widgetIframe {
+    width: 100%;
+    height: 100%;
+    max-height: 218px;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+  }
+}

@@ -1,5 +1,5 @@
-import a from "./../images/1.png";
-import b from "./../images/2.jpg"
+import a from "./../images/tracks/1.png";
+import b from  "./../images/tracks/2.png";
 let state = [
 	{
 		id: 1,
@@ -58,7 +58,7 @@ let state = [
 		id: 3,
 		path: "Станция 54 км - Токсово",
 		screenshot: b,
-		track: "https://nakarte.me/#m=10/60.28613/30.48376&l=O&nktl=gdbaop8e28cyNiOHMRGG5Q",
+		track: "https://nakarte.me/#m=12/60.62118/30.06083&l=O",
 		distance: 52,
 		station: "Новая Охта - 54 км - Токсово - Новая Охта",
 		there: [

@@ -5,6 +5,9 @@ import React from "react";
 import SunsetAnimation from "./SunsetAnimation";
 import BackAnimNature from "./BackAnimNature";
 import RoadAnimation from "./RoadAnimation";
+import './../scss/header.scss';
+import './../scss/animation.scss';
+
 function Header() {
 
 
