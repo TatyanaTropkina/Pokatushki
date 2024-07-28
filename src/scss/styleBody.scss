@@ -41,38 +41,51 @@
   display: inline-block;
   color: #007bff;
 }
+
 .link:hover {
-  color: #0057b5;
+  color: #007bff;
   text-decoration: none;
-}
-.linkSchedule {
-  margin-bottom: 5px;
-  padding: 0 24px 0 0;
-  position: relative;
+
 }
 
+//переименовать ссылки
 .linkIcon {
   display: inline-block;
   transition: all .2s linear;
+  &:hover {
+    color: #007bff;
+    cursor: pointer;
+  }
+}
+.trainIcon, .speedTrainIcon {
+  width: 32px;
+  height: 32px;
+}
+.trainIcon {
+  fill: #2acb00;
+}
+.speedTrainIcon {
+  fill: #007bff;
 }
 
-.linkIconSchedule {
+.linkIconSmall {
   position: absolute;
-  top: 3px;
+  top: 50%;
+  transform: translateY(-50%);
   right: 0;
   width: 16px;
   height: 16px;
   stroke: #007bff;
 }
-.link:hover .linkIconSchedule{
-  stroke: #0057b5;
-}
 
-.linkIconTrack {
+.linkIconBig {
   stroke: #B5D1DD;
   width: 32px;
   height: 32px;
+
 }
-.linkIconTrack:hover {
+.linkIconBig:hover {
   stroke: #007bff;
 }
+
+
