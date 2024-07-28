@@ -1,3 +1,49 @@
+//.table {
+//  border-collapse: collapse;
+//  width: 100%;
+//  background-color: #ffffff;
+//  th, td {
+//    border: 2px solid #eaeaea;
+//    padding: 8px;
+//    text-align: left;
+//    font-family: 'Comic Sans MS', arial;
+//  }
+//  th {
+//    background-color: #B5D1DD;
+//  }
+//}
+//.tableHead {
+//  position: sticky;
+//  top: 0;
+//}
+//
+//.tableSeil {
+//  padding: 10px 10px;
+//  //position: relative;
+//
+//}
+//.tableImg {
+//  height: 100%;
+//  width: 100%;
+//  display: block;
+//}
+//.tableImgZoomed {
+//  height: calc(50px * 6);
+//  position: absolute;
+//  top: 0;
+//  width: auto;
+//  height: auto;
+//  transform: scale(1.5);
+//
+//}
+//.seilImg {
+//  width: 100px;
+//
+//}
+//.tableImg {
+//  position: relative;
+//}
+
 .table {
   border-collapse: collapse;
   width: 100%;
@@ -8,34 +54,78 @@
     text-align: left;
     font-family: 'Comic Sans MS', arial;
   }
-  th {
-    background-color: #B5D1DD;
+  td {
+    padding: 10px 10px;
+  }
+  &__head {
+    position: sticky;
+    top: 0;
+    //background-color: #B5D1DD;
+    background-color: #fff;
+    z-index: 100;
+    td {
+      //box-shadow: 2px 2px 0 #B5D1DD inset, -2px -2px 0 #B5D1DD inset;
+//border: none;
+//      position: relative;
+//      &::before {
+//        content: "";
+//        position: absolute;
+//
+//      }
+      outline: 3px solid #B5D1DD;
+
+    }
   }
 }
-.tableHead {
-  position: sticky;
+
+.ceil__image {
+  position: relative;
+
+  &-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    cursor: pointer;
+    cursor: zoom-in;
+
+  }
+}
+.overlay {
+  position: fixed;
   top: 0;
-}
-
-.tableSeil {
-  padding: 10px 10px;
-
-}
-.tableImg {
-  height: 100%;
+  left: 0;
   width: 100%;
-  display: block;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  cursor: zoom-out;
+  &__img {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: calc(100% - 40px); /* Подстраивайте отступы, чтобы оставить место */
+    max-width: calc(100% - 40px);
+    z-index: 1001;
+    //max-width: 1200px;
+    //max-height: 800px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
-.tableImgZoomed {
-  height: calc(50px * 6);
-  position: absolute;
-  top: 0;
-  width: auto;
-  height: auto;
-  transform: scale(1.5);
 
+.zoomed {
+  overflow: hidden;
+  .overlay__img {
+    display: block;
+  }
 }
-.seilImg {
-  width: 100px;
 
+.no-scroll {
+  overflow: hidden;
 }

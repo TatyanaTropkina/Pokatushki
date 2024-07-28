@@ -1,5 +1,6 @@
 import './App.css';
-import Table from './components/Table';
+
+import GridLayout from './components/GridLayout';
 import Header from './components/Header';
 import state from './store/store';
 import biker from  './../src/images/biker.gif';
@@ -17,7 +18,9 @@ function App(props) {
 
 			<div className="bodyWrapper">
 		<div className='container'>
-       		<Table state={state} />
+       		
+			<GridLayout state={state}/>
+
 			<img src={biker} alt=""/>
 			<img src={helmet} alt=""/>
 
